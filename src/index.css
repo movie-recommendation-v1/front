@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "Merriweather";
+  src: url(./assets/fonts/Merriweather-Regular.ttf`);
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(./assets/fonts/Inter_18pt-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+body {
+  background: #101010;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+li {
+  list-style: none;
+}

@@ -1,0 +1,114 @@
+.Home {
+  .home-banner {
+    background-image: url(../../assets/images/solaris.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    width: 100%;
+    height: 100vh;
+    animation: changeBackground 10s infinite;
+    h2 {
+      font-family: Inter;
+      font-size: 48px;
+      font-weight: 600;
+      line-height: 56px;
+      letter-spacing: -0.02em;
+      text-align: left;
+      color: #ffffff;
+      padding-top: 332px;
+      max-width: 603px;
+      padding-bottom: 24px;
+    }
+    p {
+      font-family: Inter;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 26px;
+      letter-spacing: -0.02em;
+      text-align: left;
+      color: #878787;
+      max-width: 604px;
+      padding-bottom: 32px;
+    }
+    .btn1 {
+      font-family: Inter;
+      padding: 16px 24px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 24px;
+      letter-spacing: -0.02em;
+      text-align: left;
+      color: #ffffff;
+      background: #f14141;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+    }
+  }
+  .home-banner2 {
+    background-image: url(../../assets/images/solaris2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    width: 100%;
+    height: 100vh;
+    animation: changeBackground 10s infinite;
+    h2 {
+      font-family: Inter;
+      font-size: 48px;
+      font-weight: 600;
+      line-height: 56px;
+      letter-spacing: -0.02em;
+      text-align: left;
+      color: #ffffff;
+      padding-top: 332px;
+      max-width: 603px;
+      padding-bottom: 24px;
+    }
+    p {
+      font-family: Inter;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 26px;
+      letter-spacing: -0.02em;
+      text-align: left;
+      color: #878787;
+      max-width: 604px;
+      padding-bottom: 32px;
+    }
+  }
+  .home-banner3 {
+    background-image: url(../../assets/images/solaris3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    width: 100%;
+    height: 100vh;
+    animation: changeBackground 10s infinite;
+    h2 {
+      font-family: Inter;
+      font-size: 48px;
+      font-weight: 600;
+      line-height: 56px;
+      letter-spacing: -0.02em;
+      text-align: left;
+      color: #ffffff;
+      padding-top: 332px;
+      max-width: 603px;
+      padding-bottom: 24px;
+    }
+    p {
+      font-family: Inter;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 26px;
+      letter-spacing: -0.02em;
+      text-align: left;
+      color: #878787;
+      max-width: 604px;
+      padding-bottom: 32px;
+    }
+  }
+}
