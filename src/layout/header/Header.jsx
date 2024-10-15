@@ -1,6 +1,5 @@
-import React, { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
-import { BrowserRouter as Router } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Link, NavLink, BrowserRouter as Router } from "react-router-dom";
 import "./Header.scss";
 import arrowBottom from "../../assets/images/arrow-bottom.svg";
 import search from "../../assets/images/search.svg";
@@ -8,6 +7,7 @@ import search from "../../assets/images/search.svg";
 const Header = () => {
   const [isDropDown, setIsDropDown] = useState(false);
   const [isSearchVisible, setIsSearchVisible] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const toggleDropDown = (e) => {
     e.preventDefault();
@@ -18,9 +18,24 @@ const Header = () => {
     setIsSearchVisible(!isSearchVisible);
   };
 
+  const handleScroll = () => {
+    if (window.scrollY > 0) {
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <Router>
-      <div className="Header">
+      <header className={`Header ${isScrolled ? "scrolled" : ""}`}>
         <div className="container">
           <div className="header-all">
             <div className="header-left">
@@ -61,7 +76,7 @@ const Header = () => {
             </div>
           </div>
         </div>
-      </div>
+      </header>
     </Router>
   );
 };

@@ -16,113 +16,203 @@
       padding-bottom: 56px;
     }
   }
-
-  .hello {
-    .cards {
+  .all-tabs {
+    margin: 0 auto;
+    text-align: center;
+    .ant-tabs-nav-wrap {
       display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding-top: 40px;
-      padding-bottom: 56px;
-      .card {
-        max-width: 592px;
-        h2 {
-          //styleName: Inter/Heading/H4/32/Semi Bold;
-          font-family: Inter;
-          font-size: 32px;
-          font-weight: 600;
-          line-height: 40px;
-          letter-spacing: -0.02em;
-          text-align: center;
-          color: #ffffff;
-          padding-top: 32px;
-          padding-bottom: 24px;
-        }
-        p {
-          //styleName: Inter/Heading/H6/18/Medium;
-          font-family: Inter;
-          font-size: 18px;
-          font-weight: 500;
-          line-height: 26px;
-          letter-spacing: -0.02em;
-          text-align: center;
-          color: #878787;
-        }
-        .button-group {
-          display: flex;
-          gap: 16px;
-          justify-content: center;
-          padding-top: 32px;
-        }
-
-        .btn-primary,
-        .btn-outline {
-          font-family: "Inter", sans-serif;
-          font-size: 16px;
-          font-weight: 600;
-          line-height: 24px;
-          letter-spacing: -0.02em;
-          text-align: center;
-          padding: 16px 24px;
-          border-radius: 6px;
-          cursor: pointer;
-          transition: background-color 0.3s ease;
-        }
-
-        .btn-primary {
-          display: flex;
-          align-items: center;
-          gap: 8px;
-          background: #f14141;
-          color: #ffffff;
-          border: none;
-
-          img {
-            width: 24px;
-            height: 24px;
+      justify-content: center;
+    }
+    .hello {
+      padding-bottom: 240px;
+      .cards {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 40px;
+        padding-bottom: 56px;
+        .card {
+          max-width: 592px;
+          h2 {
+            //styleName: Inter/Heading/H4/32/Semi Bold;
+            font-family: Inter;
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 40px;
+            letter-spacing: -0.02em;
+            text-align: center;
+            color: #ffffff;
+            padding-top: 32px;
+            padding-bottom: 24px;
+          }
+          p {
+            //styleName: Inter/Heading/H6/18/Medium;
+            font-family: Inter;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 26px;
+            letter-spacing: -0.02em;
+            text-align: center;
+            color: #878787;
+          }
+          .button-group {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            padding-top: 32px;
           }
 
-          &:hover {
-            background-color: darken(#f14141, 10%);
+          .btn-primary,
+          .btn-outline {
+            font-family: "Inter", sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 24px;
+            letter-spacing: -0.02em;
+            text-align: center;
+            padding: 16px 24px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+          }
+
+          .btn-primary {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: #f14141;
+            color: #ffffff;
+            border: none;
+
+            img {
+              width: 24px;
+              height: 24px;
+            }
+
+            &:hover {
+              background-color: darken(#f14141, 10%);
+            }
+          }
+
+          .btn-outline {
+            background: transparent;
+            color: #ffffff;
+            border: 1px solid #f14141;
+
+            &:hover {
+              background-color: rgba(241, 65, 65, 0.1);
+            }
           }
         }
+      }
+      .cards-second {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .card {
+          max-width: 376px;
+          h2 {
+            //styleName: Inter/Heading/H4/32/Semi Bold;
+            font-family: Inter;
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 40px;
+            letter-spacing: -0.02em;
+            text-align: center;
+            color: #ffffff;
+            padding-top: 32px;
+            padding-bottom: 24px;
+          }
+          p {
+            //styleName: Inter/Heading/H6/18/Medium;
+            font-family: Inter;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 26px;
+            letter-spacing: -0.02em;
+            text-align: center;
+            color: #878787;
+            padding-bottom: 32px;
+          }
+          .button-group {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            padding-top: 32px;
+          }
 
-        .btn-outline {
-          background: transparent;
-          color: #ffffff;
-          border: 1px solid #f14141;
+          .btn-primary,
+          .btn-outline {
+            font-family: "Inter", sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 24px;
+            letter-spacing: -0.02em;
+            text-align: center;
+            padding: 16px 24px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+          }
 
-          &:hover {
-            background-color: rgba(241, 65, 65, 0.1);
+          .btn-primary {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: #f14141;
+            color: #ffffff;
+            border: none;
+
+            img {
+              width: 24px;
+              height: 24px;
+            }
+
+            &:hover {
+              background-color: darken(#f14141, 10%);
+            }
+          }
+
+          .btn-outline {
+            background: transparent;
+            color: #ffffff;
+            border: 1px solid #f14141;
+
+            &:hover {
+              background-color: rgba(241, 65, 65, 0.1);
+            }
           }
         }
       }
     }
   }
-}
 
-.ant-tabs {
-  &-nav {
-    display: flex; // Flex qiling
-    justify-content: center; // Ortaga joylashtirish
+  .ant-tabs {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    &-nav {
+      display: flex;
+      justify-content: center;
+      .ant-tabs-tab {
+        font-size: 16px;
+        padding: 10px 20px;
+        color: #595959;
+        border-radius: 4px;
+        transition: background-color 0.3s;
 
-    .ant-tabs-tab {
-      font-size: 16px;
-      padding: 10px 20px;
-      color: #595959;
-      border-radius: 4px;
-      transition: background-color 0.3s;
-
-      &:hover {
-        background-color: #242323;
+        &:hover {
+          background-color: #242323;
+        }
       }
-    }
 
-    .ant-tabs-tab-active {
-      color: #fff !important;
-      font-weight: bold;
-      background-color: #242323;
-      border-bottom: none;
+      .ant-tabs-tab-active {
+        font-weight: bold;
+        background-color: #242323;
+        border-bottom: none;
+        color: #fff;
+      }
     }
   }
 }
