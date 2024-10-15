@@ -1,0 +1,83 @@
+.:
+  - path: /eslint.config.js
+    type: file
+  - path: /index.html
+    type: file
+  - path: /package-lock.json
+    type: file
+  - path: /package.json
+    type: file
+  - path: /pnpm-lock.yaml
+    type: file
+  - path: /public
+    type: directory
+    contents:
+    - path: /public/vite.svg
+      type: file
+  - path: /README.md
+    type: file
+  - path: /src
+    type: directory
+    contents:
+    - path: /src/App.jsx
+      type: file
+    - path: /src/assets
+      type: directory
+      contents:
+      - path: /src/assets/fonts
+        type: directory
+        contents:
+        - path: /src/assets/fonts/Inter_18pt-Regular.ttf
+          type: file
+        - path: /src/assets/fonts/Merriweather-Regular.ttf
+          type: file
+      - path: /src/assets/images
+        type: directory
+        contents:
+        - path: /src/assets/images/arrow-bottom.svg
+          type: file
+        - path: /src/assets/images/play-circle.svg
+          type: file
+        - path: /src/assets/images/search.svg
+          type: file
+        - path: /src/assets/images/solaris.png
+          type: file
+        - path: /src/assets/images/solaris2.png
+          type: file
+        - path: /src/assets/images/solaris3.png
+          type: file
+      - path: /src/assets/react.svg
+        type: file
+    - path: /src/components
+      type: directory
+      contents:
+      - path: /src/components/home
+        type: directory
+        contents:
+        - path: /src/components/home/Home.jsx
+          type: file
+        - path: /src/components/home/Home.scss
+          type: file
+    - path: /src/index.css
+      type: file
+    - path: /src/layout
+      type: directory
+      contents:
+      - path: /src/layout/footer
+        type: directory
+        contents:
+        - path: /src/layout/footer/Footer.jsx
+          type: file
+        - path: /src/layout/footer/Footer.scss
+          type: file
+      - path: /src/layout/header
+        type: directory
+        contents:
+        - path: /src/layout/header/Header.jsx
+          type: file
+        - path: /src/layout/header/Header.scss
+          type: file
+    - path: /src/main.jsx
+      type: file
+  - path: /vite.config.js
+    type: file

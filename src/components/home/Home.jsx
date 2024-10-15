@@ -5,6 +5,7 @@ import "swiper/css";
 import "swiper/css/autoplay";
 import "./Home.scss";
 import play from "../../assets/images/play-circle.svg";
+
 const Home = () => {
   return (
     <div className="Home">
@@ -21,7 +22,7 @@ const Home = () => {
         }}
         speed={1000}
       >
-        <SwiperSlide className="home-banner">
+        <SwiperSlide className="banner banner-1">
           <div className="container">
             <h2>Solaris Synchrony: a Celestial Odyssey of Hope and Harmony</h2>
             <p>
@@ -31,39 +32,45 @@ const Home = () => {
               gripping tale of sacrifice, hope, and the unyielding spirit of
               exploration.
             </p>
-            <button className="btn1">
-              Watch Now{" "}
-              <span>
-                <img src={play} alt="" />
-              </span>
-            </button>
-            <button className="btn2">More Info</button>
+            <div className="button-group">
+              <button className="btn-primary">
+                Watch Now
+                <img src={play} alt="Play" />
+              </button>
+              <button className="btn-outline">More Info</button>
+            </div>
           </div>
         </SwiperSlide>
-        <SwiperSlide className="home-banner2">
+        <SwiperSlide className="banner banner-2">
           <div className="container">
             <h2>Discover the New Frontiers of Science</h2>
             <p>
               Journey through uncharted territories and explore the mysteries of
               the universe.
             </p>
-            <button>
-              Watch Now <img src={play} alt="" />
-            </button>
-            <button>More Info</button>
+            <div className="button-group">
+              <button className="btn-primary">
+                Watch Now
+                <img src={play} alt="Play" />
+              </button>
+              <button className="btn-outline">More Info</button>
+            </div>
           </div>
         </SwiperSlide>
-        <SwiperSlide className="home-banner3">
+        <SwiperSlide className="banner banner-3">
           <div className="container">
             <h2>A Call to Humanity: Unite and Explore</h2>
             <p>
               Join the quest for knowledge and the future of humanity among the
               stars.
             </p>
-            <button>
-              Watch Now <img src={play} alt="" />
-            </button>
-            <button>More Info</button>
+            <div className="button-group">
+              <button className="btn-primary">
+                Watch Now
+                <img src={play} alt="Play" />
+              </button>
+              <button className="btn-outline">More Info</button>
+            </div>
           </div>
         </SwiperSlide>
       </Swiper>

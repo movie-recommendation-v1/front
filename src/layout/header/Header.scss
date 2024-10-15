@@ -154,17 +154,30 @@
         line-height: 24px;
         letter-spacing: -0.02em;
         text-align: left;
-        background: none;
-        color: #ffffff;
-        border: 1px solid #f14141;
         cursor: pointer;
         padding: 10px 24px;
         margin-right: 16px;
         border-radius: 6px;
         transition: background-color 0.3s ease;
+      }
+
+      .subscribe-button {
+        background: #F14141;
+        color: #ffffff;
+        border: none;
 
         &:hover {
-          background-color: #f14141;
+          background-color: darken(#F14141, 10%);
+        }
+      }
+
+      .signin-button {
+        background: none;
+        color: #ffffff;
+        border: 1px solid #F14141;
+
+        &:hover {
+          background-color: rgba(241, 65, 65, 0.1);
         }
       }
     }
