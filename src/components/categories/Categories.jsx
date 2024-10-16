@@ -1,10 +1,10 @@
 import React from "react";
-import solaris2 from "../../../assets/images/solaris2.png";
-import solaris3 from "../../../assets/images/solaris3.png";
-import solaris4 from "../../../assets/images/solaris4.png";
-import solaris5 from "../../../assets/images/solaris5.png";
-import solaris6 from "../../../assets/images/solaris6.png";
-import play from "../../../assets/images/play-circle.svg";
+import solaris2 from "../../assets/images/solaris2.png";
+import solaris3 from "../../assets/images/solaris3.png";
+import solaris4 from "../../assets/images/solaris4.png";
+import solaris5 from "../../assets/images/solaris5.png";
+import solaris6 from "../../assets/images/solaris6.png";
+import play from "../../assets/images/play-circle.svg";
 
 import { Tabs } from "antd";
 import "./Categories.scss";

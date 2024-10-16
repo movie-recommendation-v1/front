@@ -4,7 +4,9 @@ import "swiper/css";
 import "swiper/css/autoplay";
 import "./Home.scss";
 import play from "../../assets/images/play-circle.svg";
-import Categories from "./categories/Categories";
+import Categories from "../categories/Categories";
+import New from "../new/New";
+import Subscribe from "../subscribe/Subscribe";
 const Home = () => {
   return (
     <div className="Home">
@@ -78,7 +80,13 @@ const Home = () => {
         </Swiper>
       </div>
       <div className="categories">
-        <Categories/>
+        <Categories />
+      </div>
+      <div className="news">
+        <New />
+      </div>
+      <div className="subscribe">
+          <Subscribe/>
       </div>
     </div>
   );

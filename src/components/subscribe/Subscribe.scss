@@ -1,0 +1,76 @@
+.Subscribe {
+  margin-top: 240px;
+  background-image: url(../../assets/images/subscribe-bg.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 528px;
+
+  h2 {
+    //styleName: Inter/Heading/H2/48/Semi Bold;
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 56px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #fff;
+    max-width: 964px;
+    margin: 0 auto;
+    padding-top: 120px;
+  }
+  p {
+    //styleName: Inter/Heading/H5/24/Medium;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #878787;
+    max-width: 964px;
+    margin: 0 auto;
+    padding-top: 24px;
+    padding-bottom: 32px;
+    margin: 0 auto;
+  }
+  .input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    input {
+      //styleName: Inter/Body/Large/16/Medium;
+      font-family: Inter;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: -0.02em;
+      text-align: left;
+      color: #fff;
+      background: #101010;
+      border: 1px solid #383838;
+      padding: 16px;
+      border-radius: 6px;
+      outline: none;
+      cursor: pointer;
+      ::placeholder {
+        color: #c2c2c2;
+      }
+    }
+    button {
+      //styleName: Inter/Body/Large/16/Semi Bold;
+      font-family: Inter;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 24px;
+      letter-spacing: -0.02em;
+      text-align: left;
+      color: #ffffff;
+      background: #f14141;
+      border: none;
+      border-radius: 6px;
+      padding: 16px 24px;
+      cursor: pointer;
+    }
+  }
+}

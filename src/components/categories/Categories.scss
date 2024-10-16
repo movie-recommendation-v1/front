@@ -19,22 +19,26 @@
   .all-tabs {
     margin: 0 auto;
     text-align: center;
+
     .ant-tabs-nav-wrap {
       display: flex;
       justify-content: center;
     }
+
     .hello {
       padding-bottom: 240px;
+
       .cards {
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding-top: 40px;
         padding-bottom: 56px;
+
         .card {
           max-width: 592px;
+
           h2 {
-            //styleName: Inter/Heading/H4/32/Semi Bold;
             font-family: Inter;
             font-size: 32px;
             font-weight: 600;
@@ -45,8 +49,8 @@
             padding-top: 32px;
             padding-bottom: 24px;
           }
+
           p {
-            //styleName: Inter/Heading/H6/18/Medium;
             font-family: Inter;
             font-size: 18px;
             font-weight: 500;
@@ -55,6 +59,7 @@
             text-align: center;
             color: #878787;
           }
+
           .button-group {
             display: flex;
             gap: 16px;
@@ -105,14 +110,16 @@
           }
         }
       }
+
       .cards-second {
         display: flex;
         align-items: center;
         justify-content: space-between;
+
         .card {
           max-width: 376px;
+
           h2 {
-            //styleName: Inter/Heading/H4/32/Semi Bold;
             font-family: Inter;
             font-size: 32px;
             font-weight: 600;
@@ -123,8 +130,8 @@
             padding-top: 32px;
             padding-bottom: 24px;
           }
+
           p {
-            //styleName: Inter/Heading/H6/18/Medium;
             font-family: Inter;
             font-size: 18px;
             font-weight: 500;
@@ -134,6 +141,7 @@
             color: #878787;
             padding-bottom: 32px;
           }
+
           .button-group {
             display: flex;
             gap: 16px;
@@ -192,9 +200,11 @@
     justify-content: center;
     margin: 0 auto;
     text-align: center;
+
     &-nav {
       display: flex;
       justify-content: center;
+
       .ant-tabs-tab {
         font-size: 16px;
         padding: 10px 20px;
@@ -210,9 +220,13 @@
       .ant-tabs-tab-active {
         font-weight: bold;
         background-color: #242323;
-        border-bottom: none;
         color: #fff;
       }
+    }
+
+    // Remove the bottom border for all tabs
+    &-nav {
+      border: none;
     }
   }
 }

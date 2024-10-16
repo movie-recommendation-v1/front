@@ -1,0 +1,120 @@
+.New {
+  .new-header-all {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 56px;
+    .new-header-left {
+      //styleName: Inter/Heading/H2/48/Semi Bold;
+      font-family: Inter;
+      font-size: 48px;
+      font-weight: 600;
+      line-height: 56px;
+      letter-spacing: -0.02em;
+      text-align: left;
+      color: #ffffff;
+      max-width: 592px;
+    }
+    .new-header-right {
+      p {
+        //styleName: Inter/Heading/H6/18/Medium;
+        font-family: Inter;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: -0.02em;
+        text-align: left;
+        color: #878787;
+        padding-bottom: 24px;
+      }
+      button {
+        //styleName: Inter/Body/Large/16/Semi Bold;
+        border: none;
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: -0.02em;
+        text-align: left;
+        color: #ffffff;
+        background-color: #f14141;
+        cursor: pointer;
+        padding: 16px 24px;
+        border-radius: 6px;
+      }
+    }
+  }
+  .new-middle-all {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 80px;
+
+    .new-middle-right {
+      padding-left: 56px;
+      h2 {
+        font-family: Inter;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 40px;
+        letter-spacing: -0.02em;
+        text-align: left;
+        color: #ffffff;
+      }
+      p {
+        //styleName: Inter/Heading/H6/18/Medium;
+        font-family: Inter;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: -0.02em;
+        text-align: left;
+        color: #878787;
+        padding-top: 24px;
+        padding-bottom: 32px;
+      }
+      button {
+        display: flex;
+        align-items: center;
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: -0.02em;
+        text-align: left;
+        color: #ffffff;
+        background-color: #242323;
+        border: 1px solid #383838;
+        padding: 16px 24px;
+        border-radius: 6px;
+        cursor: pointer;
+        img {
+          padding-left: 8px;
+        }
+      }
+    }
+  }
+  .new-bottom-all {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .card {
+      width: 376px;
+      img {
+        width: 376px;
+        height: 358px;
+      }
+      p {
+        //styleName: Inter/Heading/H5/24/Medium;
+        font-family: Inter;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 32px;
+        letter-spacing: -0.02em;
+        text-align: left;
+        color: #ffffff;
+        padding-top: 32px;
+      }
+    }
+  }
+}
