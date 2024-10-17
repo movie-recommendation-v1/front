@@ -1,36 +1,62 @@
 import React, { useState } from "react";
-import "./Login.scss"; // Create this file for styling
+import google from "../../../assets/images/googleLogo.svg";
+import "./Login.scss"; // Bu faylni yaratishingiz kerak
 
 const Login = () => {
-  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle login logic here
-    console.log("Login successful!");
+    console.log("Login successful!", email, password);
   };
 
   return (
     <div className="login-container">
-      <h2>Login</h2>
-      <form onSubmit={handleSubmit}>
-        <label>Username</label>
-        <input
-          type="text"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-          required
-        />
-        <label>Password</label>
-        <input
-          type="password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          required
-        />
-        <button type="submit">Login</button>
-      </form>
+      <div className="opacity">
+        <div className="container">
+          <div className="login-all">
+            <h2>Betayincha Logo</h2>
+            <h3>Access the Cinematic Realm with Elegance</h3>
+            <p>
+              A Refined Entrance: Secure Your Journey into a World of Timeless
+              Film Excellence
+            </p>
+            <form onSubmit={handleSubmit}>
+              <label>Email</label>
+              <input
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
+                placeholder="example@betayin.com"
+              />
+              <label>Password</label>
+              <input
+                type="password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                required
+                placeholder="Input password"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+              />
+              <button type="submit" className="signin-btn">
+                Sign In
+              </button>
+              <div className="google-signin">
+                <button className="google-btn">
+                  <img src={google} alt="Google Logo" />
+                  Sign In with Google
+                </button>
+              </div>
+            </form>
+            <p className="register-link">
+              Don’t have an account? <a href="/register">Register</a>
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

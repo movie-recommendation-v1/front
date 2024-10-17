@@ -1,0 +1,170 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-image: url(../../../assets/images/loginBg.jpg); /* Orqa fon rasmi */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  .opacity {
+    background: #000000cc; /* Orqa fon uchun qora rang va yarim shaffoflik */
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container {
+      width: 532px;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+      .login-all {
+        display: flex;
+        flex-direction: column;
+        h2 {
+          font-family: Merriweather;
+          font-size: 32px;
+          font-style: italic;
+          font-weight: 700;
+          line-height: 40px;
+          text-align: left;
+          color: #ffffff;
+          text-align: center;
+          padding-bottom: 32px;
+        }
+        h3 {
+          //styleName: Inter/Heading/H3/40/Semi Bold;
+          font-family: Inter;
+          font-size: 40px;
+          font-weight: 600;
+          line-height: 48px;
+          letter-spacing: -0.02em;
+          text-align: center;
+          color: #ffffff;
+          padding-bottom: 24px;
+        }
+        p {
+          //styleName: Inter/Heading/H6/18/Medium;
+          font-family: Inter;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 26px;
+          letter-spacing: -0.02em;
+          text-align: center;
+          color: #878787;
+          padding-bottom: 32px;
+        }
+
+        form {
+          display: flex;
+          flex-direction: column;
+
+          label {
+            //styleName: Inter/Body/Large/16/Medium;
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            letter-spacing: -0.02em;
+            text-align: left;
+            color: #ffffff;
+            padding-bottom: 12px;
+          }
+
+          input {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background: #101010;
+            border: 1px solid #383838;
+            outline: none;
+            color: #fff;
+            padding: 16px 16px;
+            ::placeholder {
+              font-family: Inter;
+              font-size: 16px;
+              font-weight: 500;
+              line-height: 24px;
+              letter-spacing: -0.02em;
+              text-align: left;
+              color: #878787;
+            }
+          }
+
+          .signin-btn {
+            //styleName: Inter/Body/Large/16/Semi Bold;
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 24px;
+            letter-spacing: -0.02em;
+            text-align: left;
+            color: #ffffff;
+            max-width: 532px;
+            text-align: center;
+            padding: 16px 0;
+            border: none;
+            background-color: #f14141;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-bottom: 15px;
+          }
+        }
+        .google-signin {
+          .google-btn {
+            display: flex;
+            align-items: center;
+            //styleName: Inter/Body/Large/16/Semi Bold;
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 24px;
+            letter-spacing: -0.02em;
+            text-align: left;
+            color: #ffffff;
+            background-color: #242323;
+            border: 1px solid #383838;
+            gap: 8px;
+            width: 450px;
+            justify-content: center;
+            padding: 15px 0;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-bottom: 32px;
+            img {
+              width: 24px;
+              height: 24px;
+            }
+          }
+        }
+        .register-link {
+          //styleName: Inter/Heading/H6/18/Medium;
+          font-family: Inter;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 26px;
+          letter-spacing: -0.02em;
+          text-align: center;
+          color: #ffffff;
+          a {
+            //styleName: Inter/Heading/H6/18/Semi Bold;
+            font-family: Inter;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 26px;
+            letter-spacing: -0.02em;
+            text-align: left;
+            color: #f14141;
+            padding-left: 8px;
+          }
+        }
+      }
+    }
+  }
+}
