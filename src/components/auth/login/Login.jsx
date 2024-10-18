@@ -1,18 +1,51 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify"; // ToastContainer va toast
+import "react-toastify/dist/ReactToastify.css"; // CSS import qilish
 import google from "../../../assets/images/googleLogo.svg";
-import "./Login.scss"; // Bu faylni yaratishingiz kerak
+import "./Login.scss";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
+
+  const login = async (email, password) => {
+    try {
+      const response = await fetch("https://next.mambetov.uz/user/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email: email,
+          password: password,
+        }),
+      });
+
+      const data = await response.json();
+      if (response.ok) {
+        console.log("Login successful:", data);
+        toast.success("Login successful!");
+        navigate("/");
+      } else {
+        console.error("Login error:", data);
+        toast.error("Login failed! " + (data.message || "Please try again."));
+      }
+    } catch (error) {
+      console.error("Error occurred during login:", error);
+      toast.error("An error occurred! " + error.message);
+    }
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Login successful!", email, password);
+    login(email, password);
   };
 
   return (
     <div className="login-container">
+      <ToastContainer />
       <div className="opacity">
         <div className="container">
           <div className="login-all">
@@ -38,8 +71,6 @@ const Login = () => {
                 onChange={(e) => setPassword(e.target.value)}
                 required
                 placeholder="Input password"
-                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
               />
               <button type="submit" className="signin-btn">
                 Sign In

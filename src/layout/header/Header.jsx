@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom"; // useNavigate ni import qilamiz
 import "./Header.scss";
 import arrowBottom from "../../assets/images/arrow-bottom.svg";
 import search from "../../assets/images/search.svg";
@@ -8,6 +8,7 @@ const Header = () => {
   const [isDropDown, setIsDropDown] = useState(false);
   const [isSearchVisible, setIsSearchVisible] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const navigate = useNavigate(); // useNavigate ni chaqirish
 
   const toggleDropDown = () => setIsDropDown(!isDropDown);
   const toggleSearch = () => setIsSearchVisible(!isSearchVisible);
@@ -23,6 +24,11 @@ const Header = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  // Sign In tugmasini bosganda login sahifasiga o'tish
+  const handleSignInClick = () => {
+    navigate("/login"); // login sahifasiga yo'naltirish
+  };
 
   return (
     <header className={`Header ${isScrolled ? "scrolled" : ""}`}>
@@ -62,7 +68,11 @@ const Header = () => {
               />
             </div>
             <button className="subscribe-button">Subscribe</button>
-            <button className="signin-button">Sign In</button>
+            <button className="signin-button" onClick={handleSignInClick}>
+              {" "}
+              {/* Sign In tugmasiga onClick qo'shamiz */}
+              Sign In
+            </button>
           </div>
         </div>
       </div>

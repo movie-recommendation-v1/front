@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   BrowserRouter as Router,
   Routes,
   Route,
   useLocation,
+  useNavigate,
 } from "react-router-dom";
 import Header from "./layout/header/Header";
 import Footer from "./layout/footer/Footer";
@@ -15,9 +16,16 @@ import Categories from "./components/categories/Categories";
 
 const App = () => {
   const location = useLocation();
+  const navigate = useNavigate(); // useNavigate ni chaqirish
 
   const hideHeaderAndFooter =
     location.pathname === "/login" || location.pathname === "/register";
+
+  useEffect(() => {
+    if (location.pathname === "/") {
+      navigate("/home"); // Sayt yuklanganda home sahifasiga yo'naltirish
+    }
+  }, [location.pathname, navigate]);
 
   return (
     <ErrorBoundary>
@@ -25,6 +33,7 @@ const App = () => {
         {!hideHeaderAndFooter && <Header />}
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/categories" element={<Categories />} />
