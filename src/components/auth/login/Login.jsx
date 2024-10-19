@@ -4,6 +4,7 @@ import { ToastContainer, toast } from "react-toastify"; // ToastContainer va toa
 import "react-toastify/dist/ReactToastify.css"; // CSS import qilish
 import google from "../../../assets/images/googleLogo.svg";
 import "./Login.scss";
+// import "./ToastifyCustom.scss"; // Custom CSS file for toast styles
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -26,15 +27,44 @@ const Login = () => {
       const data = await response.json();
       if (response.ok) {
         console.log("Login successful:", data);
-        toast.success("Login successful!");
-        navigate("/");
+        toast.success("Login successful!", {
+          position: "top-center", // Toast position in the center
+          autoClose: 3000, // 3 seconds auto close
+          hideProgressBar: true, // Hiding the progress bar
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: false, // Disabling drag to keep it centered
+          progress: undefined,
+          className: "custom-toast", // Adding custom class for extra styling
+        });
+        setTimeout(() => {
+          navigate("/"); // Navigate to home after successful login
+        }, 2000);
       } else {
         console.error("Login error:", data);
-        toast.error("Login failed! " + (data.message || "Please try again."));
+        toast.error("Login failed! " + (data.message || "Please try again."), {
+          position: "top-center",
+          autoClose: 3000,
+          hideProgressBar: true,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: false,
+          progress: undefined,
+          className: "custom-toast-error", // Custom error styling
+        });
       }
     } catch (error) {
       console.error("Error occurred during login:", error);
-      toast.error("An error occurred! " + error.message);
+      toast.error("An error occurred! " + error.message, {
+        position: "top-center",
+        autoClose: 3000,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: false,
+        progress: undefined,
+        className: "custom-toast-error",
+      });
     }
   };
 
