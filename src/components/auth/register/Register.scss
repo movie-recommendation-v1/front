@@ -1,14 +1,17 @@
 .all-register {
   display: flex;
   align-items: center;
+
   .register-container {
     max-width: 1440px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
+
     .register-left {
       max-width: 520px;
+
       h2 {
         font-family: Merriweather;
         font-size: 32px;
@@ -19,6 +22,7 @@
         color: #ffffff;
         padding-bottom: 32px;
       }
+
       h3 {
         font-family: Inter;
         font-size: 40px;
@@ -29,6 +33,7 @@
         color: #ffffff;
         padding-bottom: 24px;
       }
+
       p {
         font-family: Inter;
         font-size: 18px;
@@ -39,6 +44,7 @@
         color: #878787;
         padding-bottom: 32px;
       }
+
       form {
         label {
           font-family: Inter;
@@ -49,6 +55,7 @@
           text-align: left;
           color: #ffffff;
         }
+
         input {
           display: block;
           background: none;
@@ -61,6 +68,7 @@
           outline: none;
           color: #ffffff;
         }
+
         .signin-btn {
           font-family: Inter;
           font-size: 16px;
@@ -80,6 +88,7 @@
         }
       }
     }
+
     .google-signin {
       .google-btn {
         display: flex;
@@ -100,12 +109,14 @@
         border-radius: 6px;
         cursor: pointer;
         margin-bottom: 32px;
+
         img {
           width: 24px;
           height: 24px;
         }
       }
     }
+
     .register-link {
       font-family: Inter;
       font-size: 18px;
@@ -117,6 +128,7 @@
       display: flex;
       justify-content: center;
       color: #ffffff;
+
       a {
         font-family: Inter;
         font-size: 18px;
@@ -129,6 +141,7 @@
       }
     }
   }
+
   .register-right {
     background-image: url(../../../assets/images/registerBg.png);
     width: 720px;
@@ -139,37 +152,41 @@
   }
 }
 
-// Toastify custom styles
+/* Toastify custom styles */
 .custom-toast {
-  background-color: #3b3b3b !important; // Dark background for success
-  color: #ffffff !important; // White text
-  font-size: 1.1rem; // Slightly larger text
-  border-radius: 8px !important; // Rounded corners
+  background-color: #3b3b3b !important; /* Dark background for success */
+  color: #ffffff !important; /* White text */
+  font-size: 1.1rem; /* Slightly larger text */
+  border-radius: 8px !important; /* Rounded corners */
   text-align: center;
   padding: 1rem 1.5rem !important;
 }
 
 .custom-toast-error {
-  background-color: #d9534f !important; // Red background for errors
-  color: #ffffff !important; // White text
+  background-color: #d9534f !important; /* Red background for errors */
+  color: #ffffff !important; /* White text */
   font-size: 1.1rem;
   border-radius: 8px !important;
   text-align: center;
   padding: 1rem 1.5rem !important;
 }
 
-// Animations for toast appearance
+/* Positioning the toast to top center */
 .Toastify__toast-container--top-center {
-  top: 50%;
-  transform: translateY(-50%); // Vertically centering the toast
+  top: 10%; /* Adjust the top positioning */
+  left: 50%;
+  transform: translate(-50%, 0); /* Centering horizontally */
+  position: fixed;
+  z-index: 9999;
 }
 
+/* Animations for toast appearance */
 .Toastify__toast--success,
 .Toastify__toast--error {
   animation: fadeInUp 0.5s ease-in-out, fadeOutDown 0.5s ease-in-out 2.5s;
 }
 
-// Keyframe animations for smooth appearance and disappearance
+/* Keyframe animations for smooth appearance and disappearance */
 @keyframes fadeInUp {
   from {
     opacity: 0;

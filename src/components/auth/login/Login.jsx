@@ -4,7 +4,6 @@ import { ToastContainer, toast } from "react-toastify"; // ToastContainer va toa
 import "react-toastify/dist/ReactToastify.css"; // CSS import qilish
 import google from "../../../assets/images/googleLogo.svg";
 import "./Login.scss";
-// import "./ToastifyCustom.scss"; // Custom CSS file for toast styles
 
 const Login = () => {
   const [email, setEmail] = useState("");
